@@ -11,7 +11,7 @@ Where:
     f is the file name (folder, a.png, d.txt)
   
 ## Tar
-    tar -xzvf file.tar.gz
+    tar -czf  file.tar.gz dir
     tar -ztvf file.tar.gz
     tar -xvzf file.tar.gz
     
