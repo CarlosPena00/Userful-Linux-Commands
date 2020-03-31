@@ -24,3 +24,14 @@ Where:
 | -z     | Compress/Decompress Gzip - gz   |
 | -j     | Compress/Decompress Bzip2 - bz2 |
 
+## Jupyter Lab with Conda Env
+    conda install ipykernel
+    ipython kernel install --user --name=<env_name>
+
+## Jupyter Lab with TQDM
+
+    pip install ipywidgets 
+    conda install -c conda-forge nodejs 
+    jupyter nbextension enable --py widgetsnbextension
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
