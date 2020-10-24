@@ -35,3 +35,10 @@ Where:
     jupyter nbextension enable --py widgetsnbextension
     jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
+## Check NVIDIA Memory Usage / CUDA / CUDNN
+
+    watch -n 0.5 nvidia-smi
+    whereis cuda
+    cat /usr/local/cuda/version.txt
+    nvcc --version
+    cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
