@@ -42,3 +42,13 @@ Where:
     cat /usr/local/cuda/version.txt
     nvcc --version
     cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
+## Shell Commands
+
+	> # Command to overwrite to a file
+	>> # Command to append to a file
+	echo rapela > out.txt
+	echo rapela >> out.txt
+
+	sudo shutdown
+	sudo reboot
