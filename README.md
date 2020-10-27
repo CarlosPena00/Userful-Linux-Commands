@@ -52,3 +52,13 @@ Where:
 
 	sudo shutdown
 	sudo reboot
+	
+## Log ram usage
+	filename=${1:-'ram.log'}
+	sampleInterval=${2:-1}
+
+	while true; 
+	do
+		free >> $filename;
+		sleep $sampleInterval;
+	done
