@@ -75,3 +75,8 @@ Where:
 3. Copy data to drive
 > sudo dd if=\<Path to disk image (.iso file)\> of=\<Path to USB stick\> bs=4M
 4. Now, wait...
+
+## Change linux clock to use Local time
+When dualbooting Windows and Linux, you may encounter that your clock in each OS show you different times, this happens cause Windows expects the time to be stored in Local Time and Linux at UTC, this can be fixed by changing Linux to store the current time in Local Time using:
+
+	timedatectl set-local-rtc 1 --adjust-system-clock
