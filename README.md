@@ -62,3 +62,7 @@ Where:
 		free >> $filename;
 		sleep $sampleInterval;
 	done
+
+## Check if CPU supports a given extension
+	extension=$1
+	grep $extension /proc/cpuinfo
