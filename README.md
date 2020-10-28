@@ -50,7 +50,11 @@ Where:
 	echo rapela > out.txt
 	echo rapela >> out.txt
 
-	sudo shutdown
+    # Shutdown computer
+    sudo shutdown       # Shuts down the computer
+    sudo shutdown +10   # In 10 minutes, start computer shutdown
+    sudo shutdown 09:00 # At 09:00, start computer shutdown
+    sudo shutdown -c    # Cancel scheduled computer shutdown
 	sudo reboot
 	
 ## Log ram usage
