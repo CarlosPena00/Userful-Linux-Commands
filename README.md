@@ -66,3 +66,12 @@ Where:
 ## Check if CPU supports a given extension
 	extension=$1
 	grep $extension /proc/cpuinfo
+
+## How to make bootable USB stick
+1. Find your USB stick path
+> df
+2. Unmount it
+> sudo umount \<Path to USB stick\>
+3. Copy data to drive
+> sudo dd if=\<Path to disk image (.iso file)\> of=\<Path to USB stick\> bs=4M
+4. Now, wait...
